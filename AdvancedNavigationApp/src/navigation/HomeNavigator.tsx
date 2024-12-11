@@ -4,22 +4,20 @@ import FeedScreen from '../screens/FeedScreen';
 import SearchScreen from '../screens/SearchScreen';
 import NotificationsScreen from '../screens/NotificationsScreen';
 import { createStackNavigator } from '@react-navigation/stack';
-import { AuthNavigatorParamList, AppNavigatorParamList } from '../types/navigation';
+import { HomeNavigatorParamList } from '../types/navigation';
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator<AuthNavigatorParamList | AppNavigatorParamList>();
+const Stack = createStackNavigator<HomeNavigatorParamList>();
 
 const FeedStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Feed" component={FeedScreen} />
-    <Stack.Screen name="Details" component={FeedDetailsScreen} />
   </Stack.Navigator>
 );
 
 const SearchStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Search" component={SearchScreen} />
-    <Stack.Screen name="Details" component={SearchDetailsScreen} />
   </Stack.Navigator>
 );
 

@@ -4,7 +4,7 @@ import LoginScreen from '../screens/Auth/LoginScreen';
 import RegisterScreen from '../screens/Auth/RegisterScreen';
 import { AuthNavigatorParamList, AppNavigatorParamList } from '../types/navigation';
 
-const Stack = createStackNavigator<AuthNavigatorParamList | AppNavigatorParamList>();
+const Stack = createStackNavigator<AuthNavigatorParamList>();
 
 const AuthNavigator = () => {
   return (

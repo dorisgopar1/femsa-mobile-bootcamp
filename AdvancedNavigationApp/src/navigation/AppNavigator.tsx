@@ -3,9 +3,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import HomeNavigator from './HomeNavigator';
 import ProfileScreen from '../screens/ProfileScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import { AuthNavigatorParamList, AppNavigatorParamList } from '../types/navigation';
+import { AppNavigatorParamList } from '../types/navigation';
 
-const Drawer = createDrawerNavigator<AuthNavigatorParamList | AppNavigatorParamList>();
+const Drawer = createDrawerNavigator<AppNavigatorParamList>();
 
 const AppNavigator = () => {
   return (

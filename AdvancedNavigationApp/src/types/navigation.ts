@@ -15,6 +15,8 @@ export type HomeNavigatorParamList = {
   Feed: undefined;
   Search: undefined;
   Notifications: undefined;
+  Home: undefined;
+  Details: { itemId: string };
 };
 
 export type FeedStackParamList = {
