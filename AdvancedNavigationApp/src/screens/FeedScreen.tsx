@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const SettingsScreen = () => {
+const FeedScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}> Settings </Text>
-      <Text style={styles.text}>This is your Settings screen.</Text>
+      <Text style={styles.title}> Feed </Text>
+      <Text style={styles.text}>This is your Feed screen.</Text>
     </View>
   );
 };
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingsScreen;
+export default FeedScreen;

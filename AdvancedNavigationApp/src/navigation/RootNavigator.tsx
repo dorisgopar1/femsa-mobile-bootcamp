@@ -3,8 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import AuthNavigator from './AuthNavigator';
 import AppNavigator from './AppNavigator';
+import { AuthNavigatorParamList, AppNavigatorParamList } from '../types/navigation';
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator<AuthNavigatorParamList | AppNavigatorParamList>();
 
 const RootNavigator = () => {
   const isAuthenticated = false;
